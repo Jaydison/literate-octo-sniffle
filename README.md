@@ -1,9 +1,3 @@
 # Technical Portfolio
-
-Terminal-inspired responsive portfolio built with HTML, vanilla CSS, and JavaScript.
-
-## Before publishing
-Update `contactConfig` in `js/script.js` with your email address and WhatsApp number.
-
-## Tech stack
-Edit the category rows in `index.html`. Update each `stack-count` when adding or removing tags.
+Replace `contactConfig` in `js/script.js` before publishing.
+The `?v=3` suffix on CSS and JavaScript links prevents GitHub Pages from showing an older cached layout after an update.
