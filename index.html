@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A monochrome, terminal-inspired technical portfolio.">
+  <title>JAYDISON // Technical Builder</title>
+
+  <!-- Satoshi is loaded from Fontshare. Replace with local font files later if preferred. -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="path">~/portfolio/<strong>jaydison</strong> <span>/ index</span></div>
+      <div class="status"><span class="status-dot" aria-hidden="true"></span><span class="status-text">available for work</span></div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <p class="eyebrow"><span class="prompt">&gt;</span> system.init("technical-builder")</p>
+        <h1>I make things<br>work<span class="cursor" aria-hidden="true"></span></h1>
+        <p class="hero-copy">A technical builder focused on practical systems, web applications and solutions without unnecessary complexity.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">View projects</a>
+          <button class="button" id="open-contact" type="button">Contact me</button>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head">
+          <div class="section-label">01 / Selected work</div>
+          <h2>Built to solve real problems.</h2>
+        </div>
+
+        <div class="project-list">
+          <button class="project" type="button" aria-expanded="false">
+            <span class="project-index">[001]</span>
+            <span class="project-summary"><h3>CoffeeHot</h3><span class="project-description"><p>A web-based coffee ordering and management system designed to keep ordering, menu administration and daily operations in one practical workflow.</p></span></span>
+            <span class="project-arrow" aria-hidden="true">-&gt;</span>
+          </button>
+          <button class="project" type="button" aria-expanded="false">
+            <span class="project-index">[002]</span>
+            <span class="project-summary"><h3>ResolveFlow</h3><span class="project-description"><p>An issue resolution platform that organizes reports, ownership and progress so technical problems can move clearly from submission to completion.</p></span></span>
+            <span class="project-arrow" aria-hidden="true">-&gt;</span>
+          </button>
+          <button class="project" type="button" aria-expanded="false">
+            <span class="project-index">[003]</span>
+            <span class="project-summary"><h3>Next build</h3><span class="project-description"><p>Currently compiling. This slot is reserved for the next completed technical or game-development project.</p></span></span>
+            <span class="project-arrow" aria-hidden="true">-&gt;</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="section-head">
+          <div class="section-label">02 / Stack</div>
+          <h2>Tools I use to ship.</h2>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-item"><strong>HTML</strong><span>Structure / Semantics</span></div>
+          <div class="stack-item"><strong>CSS</strong><span>Layout / Interface</span></div>
+          <div class="stack-item"><strong>JavaScript</strong><span>Logic / Interaction</span></div>
+          <div class="stack-item"><strong>Bootstrap</strong><span>Rapid UI / Components</span></div>
+          <div class="stack-item"><strong>PHP</strong><span>Server / Application</span></div>
+          <div class="stack-item"><strong>MySQL</strong><span>Data / Persistence</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-head">
+          <div class="section-label">03 / Experience</div>
+          <h2>Learning through real work.</h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <span class="experience-number">[001]</span>
+            <div class="experience-role">
+              <h3>Industrial Training</h3>
+              <p>Company name / Organisation</p>
+            </div>
+            <p class="experience-description">Supported web systems and technical operations while learning to test, document and deliver practical solutions in a working environment.</p>
+            <span class="experience-period">20XX - 20XX</span>
+          </article>
+          <article class="experience-item">
+            <span class="experience-number">[002]</span>
+            <div class="experience-role">
+              <h3>Next Experience</h3>
+              <p>Future organisation</p>
+            </div>
+            <p class="experience-description">Reserved for another internship, part-time role, freelance project or relevant technical experience.</p>
+            <span class="experience-period">TBD</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-head">
+          <div class="section-label">04 / System info</div>
+          <h2>Direct. Practical. Technical.</h2>
+        </div>
+        <div class="info-grid">
+          <div class="info-row"><span class="meta">Location</span><span>Malaysia</span></div>
+          <div class="info-row"><span class="meta">Status</span><span>Available</span></div>
+          <div class="info-row"><span class="meta">Focus</span><span>Technology Generalist</span></div>
+          <div class="info-row"><span class="meta">Approach</span><span>Explore. Understand. Build.</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Jaydison</span>
+      <span>Built with HTML + vanilla CSS</span>
+    </footer>
+  </div>
+
+
+  <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-title">
+    <div class="contact-head">
+      <h2 id="contact-title">&gt; open_contact_channel</h2>
+      <button class="contact-close" id="close-contact" type="button" aria-label="Close contact options">×</button>
+    </div>
+    <div class="contact-body">
+      <p>Choose the channel that works best for you.</p>
+      <div class="contact-options">
+        <a class="contact-option" id="email-link" href="mailto:YOUR_EMAIL@example.com">
+          <span class="contact-icon">[@]</span>
+          <span><strong>Email</strong><small id="email-text">YOUR_EMAIL@example.com</small></span>
+          <span class="contact-arrow">-&gt;</span>
+        </a>
+        <a class="contact-option" id="whatsapp-link" href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon">[+]</span>
+          <span><strong>WhatsApp</strong><small id="whatsapp-text">+60 12-345 6789</small></span>
+          <span class="contact-arrow">-&gt;</span>
+        </a>
+      </div>
+      <p class="contact-note">Replace the placeholder email and phone number in the contactConfig object.</p>
+    </div>
+  </dialog>
+  <script src="js/script.js"></script>
+</body>
+</html>
